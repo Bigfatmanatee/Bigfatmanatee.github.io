@@ -1,0 +1,78 @@
+body
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    line-height: 35px;
+}
+
+p
+{
+    font-size: 25px;
+}
+
+hr
+{
+    border: none;
+    height: 5px;
+    width: 500px;
+    color: rgb(47, 47, 47);
+    background-color: rgb(47, 47, 47);
+}
+
+.box
+{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+
+    padding: 10px;
+}
+
+.input
+{
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+.add-remove-letters
+{
+    width: 40px;
+    height: 40px;
+
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+#run-button
+{
+    width: 200px;
+    height: 40px;
+
+    font-size: 20px;
+}
