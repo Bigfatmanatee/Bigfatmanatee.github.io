@@ -1,1 +1,37 @@
-<h1>What is the up?</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UFT-8">
+        <meta name = "viewport" contents = "width=device-width, initial-scale:1.0">
+        <title>Word Filter</title>
+        <link rel="stylesheet" href="filter.css">  
+        <script 
+            src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous">
+        </script> 
+    </head>
+    <body>
+        <h1 id="output"></h1>
+        <h1 style="font-size: 50px; color: royalblue;">Plubos's Word Filter</h1>
+        <hr>
+
+        <h2 style="font-size: 30px">
+            <span>
+                <button type="button" class="add-remove-letters" name="-">-</button>
+                <button type="button" class="add-remove-letters" name="+">+</button>
+            </span>Enter your known characters:
+        </h2>
+        
+        <div id="userinputs"></div>
+
+        <p>
+            Enter <u>incorrectly positioned characters</u> with: <u>'c'?</u> or <u>c?</u><br>
+            Leave <u>unknown characters</u> blank.
+        </p>
+
+        <button type="button" id="run-button">Filter input!</button>
+    </body>
+
+    <script src="filter.js"></script>
+</html>
