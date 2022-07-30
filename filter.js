@@ -66,7 +66,7 @@ function filterWords(){
                 break;
             }
         }
-        if (containsExcluded == false) matches.push(dictWord);
+        if (containsExcluded == false && matches.includes(dictWord) == false) matches.push(dictWord);
     }
 
     var output = [];
