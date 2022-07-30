@@ -46,7 +46,7 @@ function filterWords(){
     console.log(filteredInput);
     console.log(fullInput);
 
-    outputDisplay.innerHTML = "FI: " + filteredInput;
+   
 
     var excluded = document.getElementById("exclusion-input").value;
     var inputLength = fullInput.length;
@@ -73,6 +73,8 @@ function filterWords(){
         //Github made be do this ;-;
         if (containsExcluded == false && matches.includes(dictWord) == false) matches.push(dictWord);
     }
+
+    outputDisplay.innerHTML = "FI: " + matches[0];
 
     var output = [];
 
