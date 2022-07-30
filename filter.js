@@ -46,6 +46,8 @@ function filterWords(){
     filteredInput = filteredInput.toLowerCase();
     fullInput = fullInput.toLowerCase();
 
+    document.getElementById("pagename").innerHTML = fullInput;
+
     var excluded = document.getElementById("exclusion-input").value;
     var inputLength = fullInput.length;
     var matches = [];
