@@ -43,8 +43,8 @@ function filterWords(){
 
     console.log(filteredInput);
     console.log(fullInput);
-    filteredInput = filteredInput.toLowerCase();
-    fullInput = fullInput.toLowerCase();
+    //filteredInput = filteredInput.toLowerCase();
+    //fullInput = fullInput.toLowerCase();
 
     document.getElementById("pagename").innerHTML = fullInput;
 
@@ -94,7 +94,7 @@ function filterWords(){
     }
 
     console.log(output);
-    var outputDisplay = document.getElementById("output");
+    var outputDisplay = document.getElementById("pagename");
 
     //Delete current info
     if (outputDisplay.children.length > 0)
