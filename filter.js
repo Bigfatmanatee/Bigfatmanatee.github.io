@@ -27,8 +27,6 @@ function filterWords(){
     //Misplaced letters
     var misplacedInput = "";
 
-    var outputDisplay = document.getElementById("pagename");
-
     //Getting all children of the ui div
     var elements = document.getElementById("userinputs");
     for (const child of elements.children)
@@ -72,8 +70,6 @@ function filterWords(){
         if (containsExcluded == false && matches.includes(dictWord) == false) matches.push(dictWord);
     }
 
-    outputDisplay.innerHTML = matches[0];
-
     var output = [];
 
     //Second pass: Excludes new list based on yellow characters
@@ -94,6 +90,7 @@ function filterWords(){
     }
 
     console.log(output);
+    var outputDisplay = document.getElementById("pagename");
 
     //Delete current info
     if (outputDisplay.children.length > 0)
@@ -103,7 +100,7 @@ function filterWords(){
             outputDisplay.removeChild(outputDisplay.lastChild);
         }
     }
-    /*
+    
     var fragList = document.createDocumentFragment();
 
     //Writing to html file
@@ -112,8 +109,8 @@ function filterWords(){
         li.textContent = data;
         fragList.appendChild(li);
     })
-    */
 
+    outputDisplay.appendChild(fragList);
  
 }
 
