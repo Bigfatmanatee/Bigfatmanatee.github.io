@@ -91,7 +91,7 @@ function filterWords(){
 
     console.log(output);
 
-    var outputDisplay = document.getElementById("output");
+    var outputDisplay = document.getElementById("pagename");
 
     //Delete current info
     if (outputDisplay.children.length > 0)
@@ -101,7 +101,7 @@ function filterWords(){
             outputDisplay.removeChild(outputDisplay.lastChild);
         }
     }
-
+    /*
     var fragList = document.createDocumentFragment();
 
     //Writing to html file
@@ -110,8 +110,9 @@ function filterWords(){
         li.textContent = data;
         fragList.appendChild(li);
     })
+    */
 
-    outputDisplay.appendChild(fragList);
+    outputDisplay.innerHTML = output[0];
 }
 
 function keyPress(e){
