@@ -47,6 +47,8 @@ function filterWords(){
     console.log(filteredInput);
     console.log(fullInput);
 
+    outputDisplay.innerHTML = filteredInput;
+
     var excluded = document.getElementById("exclusion-input").value;
     var inputLength = fullInput.length;
     var matches = [];
