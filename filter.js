@@ -43,6 +43,8 @@ function filterWords(){
 
     console.log(filteredInput);
     console.log(fullInput);
+    filteredInput = filteredInput.toLowerCase();
+    fullInput = fullInput.toLowerCase();
 
     var excluded = document.getElementById("exclusion-input").value;
     var inputLength = fullInput.length;
@@ -90,7 +92,7 @@ function filterWords(){
     }
 
     console.log(output);
-    var outputDisplay = document.getElementById("pagename");
+    var outputDisplay = document.getElementById("output");
 
     //Delete current info
     if (outputDisplay.children.length > 0)
