@@ -27,10 +27,13 @@ function filterWords(){
     //Misplaced letters
     var misplacedInput = "";
 
+    var outputDisplay = document.getElementById("pagename");
+
     //Getting all children of the ui div
     var elements = document.getElementById("userinputs");
     for (const child of elements.children)
     {
+        outputDisplay.innerHTML = child.value;
         if (child.value.length == 0) fullInput += '?';
         else fullInput += child.value[0];
 
@@ -112,7 +115,7 @@ function filterWords(){
     })
     */
 
-    outputDisplay.innerHTML = fullInput;
+ 
 }
 
 function keyPress(e){
