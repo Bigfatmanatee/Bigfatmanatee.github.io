@@ -95,7 +95,7 @@ function filterWords(){
     }
 
     console.log(output);
-    var outputDisplay = document.getElementById("pagename");
+    var outputDisplay = document.getElementById("output");
 
     //Delete current info
     if (outputDisplay.children.length > 0)
