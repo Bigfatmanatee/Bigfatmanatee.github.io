@@ -70,6 +70,7 @@ function filterWords(){
     }
 
     var output = [];
+    console.log(output);
 
     //Second pass: Excludes new list based on yellow characters
     for (const w of matches)
@@ -170,5 +171,3 @@ if (document.readyState === 'loading') {
 } else {
     loadDictionary();
 }
-
-
