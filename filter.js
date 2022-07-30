@@ -31,14 +31,15 @@ function filterWords(){
     var elements = document.getElementById("userinputs");
     for (const child of elements.children)
     {
+        var t = child.value.toLowerCase();
         if (child.value.length == 0) fullInput += '?';
-        else fullInput += child.value[0];
+        else fullInput += t[0];
 
         if (child.value.length == 0 || child.value.length > 1) filteredInput += '?';
-        else filteredInput += child.value;
+        else filteredInput += t;
 
         //Getting yellow letters
-        if (child.value.length == 2) misplacedInput += child.value[0];
+        if (child.value.length == 2) misplacedInput += t[0];
     }
 
     console.log(filteredInput);
@@ -46,7 +47,7 @@ function filterWords(){
     //filteredInput = filteredInput.toLowerCase();
     //fullInput = fullInput.toLowerCase();
 
-    document.getElementById("pagename").innerHTML = fullInput;
+    //document.getElementById("pagename").innerHTML = fullInput;
 
     var excluded = document.getElementById("exclusion-input").value;
     var inputLength = fullInput.length;
