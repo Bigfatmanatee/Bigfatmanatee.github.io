@@ -19,17 +19,10 @@ hr
     background-color: rgb(47, 47, 47);
 }
 
-.box
+ul
 {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aliceblue;
-
-    padding: 10px;
+    font-size: 23px;
+    text-align: center;
 }
 
 .input
@@ -75,4 +68,13 @@ hr
     height: 40px;
 
     font-size: 20px;
+}
+
+#exclusion-input
+{
+    width: 300px;
+    height: 30px;
+
+    font-size: 25px;
+    text-align: center;
 }
