@@ -112,7 +112,7 @@ function filterWords(){
     })
     */
 
-    outputDisplay.innerHTML = matches[0];
+    outputDisplay.innerHTML = fullInput;
 }
 
 function keyPress(e){
