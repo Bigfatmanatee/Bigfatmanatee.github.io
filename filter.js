@@ -33,7 +33,6 @@ function filterWords(){
     var elements = document.getElementById("userinputs");
     for (const child of elements.children)
     {
-        outputDisplay.innerHTML = child.value;
         if (child.value.length == 0) fullInput += '?';
         else fullInput += child.value[0];
 
@@ -95,8 +94,6 @@ function filterWords(){
     }
 
     console.log(output);
-
-    var outputDisplay = document.getElementById("pagename");
 
     //Delete current info
     if (outputDisplay.children.length > 0)
