@@ -49,7 +49,7 @@ function filterWords(){
 
     //document.getElementById("pagename").innerHTML = fullInput;
 
-    var excluded = document.getElementById("exclusion-input").value;
+    var excluded = document.getElementById("exclusion-input").value.toLowerCase();
     var inputLength = fullInput.length;
     var matches = [];
 
