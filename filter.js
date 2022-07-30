@@ -70,6 +70,7 @@ function filterWords(){
     }
 
     var output = [];
+
     //Second pass: Excludes new list based on yellow characters
     for (const w of matches)
     {
@@ -86,6 +87,8 @@ function filterWords(){
         }
         if (containsCounter == misplacedInput.length) output.push(w);
     }
+
+    console.log(output);
 
     var outputDisplay = document.getElementById("output");
 
@@ -167,3 +170,5 @@ if (document.readyState === 'loading') {
 } else {
     loadDictionary();
 }
+
+
